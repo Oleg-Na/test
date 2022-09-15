@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    
+</head>
+
+<body>
+    <div class="container">
+    <div>
+     <form name="publish" class="form">
+        <div>
+            <label for="first_value" class="form-label">What is Bitcoin price today?</label>
+            <input type="text" name="numberf"  id ="first_value" class="form-input" placeholder="price" value="" pattern="^[ 0-9]+$"/>
+        </div>
+         <div class="form-container-sum">
+            <label for="second_value" class="form-label">How mush $ do you have?</label>
+            <input type="text" name="numberc" id ="second_value" class="form-input" placeholder="sum" value="" pattern="^[ 0-9]+$"/>
+        </div>
+        <button type="submit" class="my-button">Сonfirm</button>
+    </form>
+    <p>Result: <span id="result_multi"></span></p>
+    </div>
+    </div>
+
+    <script src="task-01.js" type="module"></script>
+</body>
+
+</html>
